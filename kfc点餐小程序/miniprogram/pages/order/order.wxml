@@ -1,0 +1,17 @@
+<!--pages/order/order.wxml-->
+<view class="orderBox" wx:for="{{list}}">
+    <view class="shopTitle">
+        <image class="shopImage" src="{{item.shopImage}}">图片</image>
+	    <view class="shopName">{{item.shopname}}</view>
+        <view class="state">已完成</view>
+    </view>
+	<view class="orderContent">
+        <view class="orderDetail" wx:for="{{item.order}}" wx:for-item="item2">
+				<view class="mealName">{{item2.name}}</view>
+		    	<view class="mealNum">x{{item2.number}}</view>
+        </view>
+		<view class="sumBill">￥{{item.sum}}</view>
+	    <button class="OneAgain" bindtap="OneAgain"data-id="{{item.shopID}}">再来一单</button>
+	</view>
+    
+</view>

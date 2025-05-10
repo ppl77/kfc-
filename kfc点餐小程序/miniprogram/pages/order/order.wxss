@@ -1,0 +1,46 @@
+/* pages/order/order.wxss */
+.orderBox{
+    display: flex;
+    flex-direction: column;
+}
+.shopTitle{
+    display: flex;
+    background-color: #fff;
+    margin-bottom: 8rpx;
+}
+.shopImage{
+    width: 125rpx;
+    height: 125rpx;
+}
+.shopName{
+    font-size: 45rpx;
+}
+.state{
+	width: 125rpx;
+	float: right;
+	right: 0rpx;
+	margin-left: 150rpx;
+}
+.orderContent{
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    background-color: #fff;
+}
+.orderDetail{
+	display: flex;
+    background-color: #fff;
+}
+.mealName{
+	float: left;
+    margin-left: 85rpx;
+}
+.mealNum{
+	float: right;
+	position:absolute;
+    left: 92%;
+}
+.sumBill{
+    margin-left: 550rpx;
+    margin-top: 20rpx;    
+}

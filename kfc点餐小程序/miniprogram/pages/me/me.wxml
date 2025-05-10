@@ -1,0 +1,28 @@
+<!--pages/me/me.wxml-->
+<view wx:if="{{!isLogin}}">
+	<view wx:if="{{!user_Info}}" style="display: flex; flex-direction: column;">
+		<view class="weui-uploader__input-box">
+			<view class="weui-uploader__input" bindtap="chooseImage"></view>
+		</view>
+		<view class="NickName">设置昵称 </view>
+		<button class="loginButton1" style="position: relative; left: 0rpx; top: -1rpx" disabled="false">登录</button>
+	</view>
+	<view wx:if="{{user_Info}}" >
+		<view class="meBox">
+			<view><image class="uploader__img" src="{{userAvatarUrl}}"></image></view>
+			<view class="NickName"><input bindinput="inputNickName" value='{{NickName}}' placeholder="设置昵称"  confirm-type="done"/></view>
+			
+		</view>
+		<button class="loginButton2" bindtap="Login" hidden="{{buttonHidden}}" >登录</button>
+	</view>
+</view>
+<view wx:else >
+	<view>
+		<view class="meBox">
+			<view><image class="uploader__img" src="{{userAvatarUrl}}"></image></view>
+			<view class="NickName">{{NickName}}</view>
+			
+		</view>
+	</view>
+</view>
+ 

@@ -1,0 +1,13 @@
+<!--pages/index/index.wxml-->
+<view id="search">
+	<input id="searchBox" placeholder="输入搜索内容"/>
+	<button id="searchButton">搜索</button>
+</view>
+
+<view wx:for="{{list}}" wx:key="list" class="shopBox" bindtap="ToSeller" data-id="{{item._id}}">
+	<image class="shopImage" src="{{item.shopImage}}"></image>
+    <view class="shopDetail">
+        <view class="shopName">{{item.shopname}}</view>
+	    <view class="shopScore">{{item.score}}</view>
+    </view>
+</view>

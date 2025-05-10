@@ -1,0 +1,42 @@
+/* pages/index/index.wxss */
+#search{
+    display: flex;
+}
+#searchBox{
+    width: 450rpx;
+    border: rgb(255, 217, 0) solid 2rpx;
+    margin-left: 20rpx;
+}
+#searchButton{
+    width: 150rpx;
+    font-size: 25rpx;
+    margin-left: -25rpx;
+    height: 50rpx;
+}
+.shopBox{
+    display: flex;
+    margin-bottom: 30rpx;
+    background-color: #fff;
+}
+.shopImage{
+    margin-bottom: 30rpx;
+    margin-top: 30rpx;
+    width:250rpx;
+    height: 250rpx;
+}
+.shopDetail{
+    margin-left: 30rpx;
+    margin-bottom: 30rpx;
+    margin-top: 30rpx;
+    display:flex;
+    flex-direction: column;
+}
+.shopName{
+    font-size: 45rpx;
+    font-weight:bold;
+}
+.shopScore{
+    margin-top: 25rpx;
+    font-size: 30rpx;
+    color:rgb(255, 217, 0);
+}
